@@ -1,6 +1,7 @@
 body {
   background-image: url(/blog/assets/img/homepage_background.jpeg);
 }
+
 .navbar-expand-lg {
   background-color: rgb(247, 5, 5, 0.3);
 }
@@ -44,62 +45,54 @@ body {
   color: rgb(92, 89, 87);
 }
 
-main {
-  position: relative;
-  width: 100%;
+.login-box {
   height: 600px;
-  align-items: center;
+  width: 450px;
   display: flex;
+  flex-direction: column;
+  margin: 0ch;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 70px;
 }
 
-.card {
-  background-color: #fff;
-  padding: 15px;
-  border: none;
+.login-box h2 {
+  font-weight: 700;
 }
 
-.input-box {
-  position: relative;
+.small-text {
+  font-size: smaller;
 }
 
-.input-box i {
-  position: absolute;
-  right: 13px;
-  top: 15px;
-  color: #ced4da;
+#recaptcha {
+  color: grey;
+  font-size: smaller;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .form-control {
-  height: 50px;
-  background-color: #eeeeee69;
+  box-shadow: none !important;
+  border: none;
 }
 
-.form-control:focus {
-  background-color: #eeeeee69;
-  box-shadow: none;
-  border-color: #eee;
+#exampleCheck1 {
+  background-color: grey;
+}
+.login-box form input[class="form-control"] {
+  background-color: rgb(54, 54, 54);
+  padding: 0.8rem 1rem;
 }
 
-.list {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  align-items: center;
+.login-box form input[class="form-control"]:focus {
+  background-color: rgb(88, 87, 87);
 }
-
-.border-bottom {
-  border-bottom: 2px solid #eee;
+.login-box button {
+  background-color: #e50914;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.8rem 0;
+  font-weight: 700;
 }
-
-.list i {
-  font-size: 19px;
-  color: red;
-}
-
-.list small {
-  color: #dedddd;
-}
-
 .pin-ic {
   color: white;
 }
