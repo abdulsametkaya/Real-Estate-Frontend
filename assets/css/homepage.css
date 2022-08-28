@@ -1,5 +1,5 @@
 body {
-  background-image: url(/blog/assets/img/homepage_background.jpeg);
+  background-image: url(../img/homepage_background.jpeg);
 }
 .navbar-expand-lg {
   background-color: rgb(247, 5, 5, 0.3);
