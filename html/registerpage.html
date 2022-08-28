@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/blog/assets/css/loginpage.css" />
+    <link rel="stylesheet" href="/blog/assets/css/registerpage.css" />
   </head>
   <body>
     <div class="login-page">
@@ -46,21 +46,42 @@
         </ul>
         <!-- Navigation Menu -->
       </nav>
-      <!-- Login Box -->
+      <!-- Register Box -->
       <div
         class="d-flex justify-content-center align-items-center mt-5 mb-5"
         style="width: 100vw"
       >
         <section class="login-box mt-4">
-          <h2 class="text-light">Oturum Aç</h2>
+          <div class="kayit">
+            <h2 class="text-light">Yeni Hesap</h2>
+          </div>
           <form class="mt-4">
+            <div class="mt-2 mb-1 rounded py-1">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName"
+                aria-describedby="NameHelp"
+                placeholder="Ad ve Soyad"
+              />
+            </div>
             <div class="mt-2 mb-1 rounded py-1">
               <input
                 type="email"
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                placeholder="E-Posta veya Telefon Numarası"
+                placeholder="E-Posta Adresi"
+              />
+            </div>
+            <div class="mt-2 mb-1 rounded py-1">
+              <input
+                type="tel"
+                class="form-control"
+                id="exampleInputPhone"
+                pattern="[0-9]{4}[0-9]{3}[0-9]{2}[0-9]{2}"
+                aria-describedby="phoneHelp"
+                placeholder="telefon numarası"
               />
             </div>
             <div class="mb-1 rounded py-1">
@@ -68,11 +89,11 @@
                 type="password"
                 class="form-control"
                 id="exampleInputPassword1"
-                placeholder="Şifre"
+                placeholder="Yeni Şifre"
               />
             </div>
             <button type="submit" class="mt-4" style="width: 100%">
-              Oturum Aç
+              Kayıt Ol
             </button>
             <div class="mb-3 form-check mt-3 d-flex justify-content-between">
               <section>
@@ -93,10 +114,6 @@
             </div>
           </form>
           <div class="text-secondary">
-            <span>
-              Emlak.com'a katılmak ister misiniz?
-              <a href="registerpage.html" class="link-light">Şimdi kaydolun.</a>
-            </span>
             <span id="recaptcha">
               Bu sayfa robot olmadığınızı kanıtlamak için Google reCAPTCHA
               tarafından korunuyor. <br />

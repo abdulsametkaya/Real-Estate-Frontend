@@ -20,7 +20,7 @@ const str2 = selectAll(className1);
 str.addEventListener("focusin", (e) => {
   setTimeout(() => {
     for (let classes of str2) {
-      classes.classList.remove("d-none");
+      classes.classList.toggle("d-none");
     }
   }, 100);
 });
@@ -28,7 +28,7 @@ str.addEventListener("focusin", (e) => {
 str.addEventListener("focusout", (e) => {
   setTimeout(() => {
     for (let classes of str2) {
-      classes.classList.add("d-none");
+      classes.classList.toggle("d-none");
     }
   }, 100);
 });
